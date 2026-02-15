@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Weather App</title>
     <link rel="stylesheet" href="Project.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
     <div class="container">
@@ -13,8 +13,73 @@
             <p>Weather</p>
             <div id="Search">
             <input type ="text" id="inp" placeholder="Enter City">
-            <button type="button" id="SearchBtn">Search</button>
-            <button id="LocationBtn">Current Location</button>
+            <button type="button" id="SearchBtn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+            <button id="LocationBtn"><i class="fa-solid fa-location-crosshairs"></i> Current Location</button>
+            </div>
+        </div>
+        <div class="weather-data">
+            <div class="weather-left">
+                <div class="card">
+                    <div class="current-weather">
+                        <div class="details">
+                            <p>Now</p>
+                            <h1>__ &deg;C</h1>
+                            <p>________</p>
+                        </div>
+                        <div class="weather-icon">
+                            <i class="fa-solid fa-cloud fa-3x"></i>
+                        </div> 
+                    </div>
+                    <div class="card-footer">
+                        <p style="margin-bottom: 10px;"><i class="fa-regular fa-calendar fa-2x"></i>    ______</p>
+                        <p><i class="fa-solid fa-location-dot fa-2x"></i>   ______</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2> 5 Day Forecast</h2>
+                    <div class="day-forecast">
+                        <div class="forecast-item">
+                            <div class="icon" style="display: flex; align-items: center; ">
+                                <i class="fa-solid fa-cloud-sun "></i>
+                                <span> __&deg;C</span>
+                            </div>
+                            <p> ____</p>
+                            <p> ____</p>
+                        </div>
+                    </div>
+                    <div class="forecast-item">
+                            <div class="icon" style="display: flex; align-items: center; ">
+                                <i class="fa-solid fa-cloud-sun "></i>
+                                <span> __&deg;C</span>
+                            </div>
+                            <p>   ____</p>
+                            <p>   ____</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-right">
+                    <h2>Today's Highlights</h2>
+                    <div class="highlights">
+                        <div class="card">
+                            <div class="card-head">
+                                <p>Air Quality Index</p>
+                                <p class="air-index aqi-1">Good</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-head">
+                                <p>Air Quality Index</p>
+                                <p class="air-index aqi-1">Good</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-head">
+                                <p>Air Quality Index</p>
+                                <p class="air-index aqi-1">Good</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
