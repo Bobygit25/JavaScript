@@ -8,6 +8,7 @@ body{
     font:bold;
     background-color:black;
     color:azure;
+    font-family: sans-serif
    
 }
 
@@ -45,6 +46,70 @@ body{
     }
 }
 
+.card{
+    background-color: #0d1b2a;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    &p{
+        font-size: 14px;
+        font-color: grey;
+    }
+    
+}
+.weather-data{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap : 12px;
+    & .weather-left{
+        grid-column: span 1;
+        & .current-weather{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+    }
+    & .card-footer{
+        margin-top: 20px;
+    }
+    
+}
 
+.forecast-item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: 10px;
+    font-size: 20px;
+}
 
-
+.weather-right{
+    grid-column: span 1;
+    & h2{
+        margin-bottom: 10px;
+    }
+    & .highlights{
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        column-gap : 10px;
+        & .card-head{
+            display: flex;
+            justify-content: space-between;
+            margin: 2px;
+            & .air-index{
+                color :black;
+                padding: 5px;
+                border-radius: 10px;
+                &.aqi-1{
+                    background-color: yellow;
+                }
+                &.aqi-2{
+                    background-color: rgb(255, 68, 0);
+                }
+                &.aqi-3{
+                    background-color: rgb(0, 255, 42);
+                }
+            }
+        }
+    }
+}
