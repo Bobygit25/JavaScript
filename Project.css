@@ -108,8 +108,16 @@ body{
                 }
                 &.aqi-3{
                     background-color: rgb(0, 255, 42);
+                    
                 }
             }
+        } 
+        & .sunrise-sunset{
+            display : grid;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
+
+
+
